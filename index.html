@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS07 - API Fetch</title>
+<link rel="stylesheet" href="style.css"> 
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+
+</head>
+<body>
+<div class="container mt-5"> 
+<div class="form-content"></div> <!-- Contenido del formulario (aún no implementado) -->
+        
+<!-- Botón para leer usuarios -->
+<div class="d-flex justify-content-center">
+<button id="actualizarBoton" class="btn btn-primary">Leer Usuarios</button>
+</div>
+        
+<!-- Indicador de carga (inicialmente oculto) -->
+<div id="loader" class="loader d-none"></div>
+        
+<!-- Contenido principal de la página (inicialmente oculto) -->
+<div id="content" class="d-none d-flex justify-content-center align-items-center flex-column">
+<div class="form-content"></div> <!-- Contenido del formulario (aún no implementado) -->
+            
+<!-- Tabla responsive para mostrar datos de usuarios -->
+<div class="table-responsive">
+            <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Avatar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.jss"></script>
+</body>
+</html>
